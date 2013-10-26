@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[KIDDIKN Blog]]></title>
+  <link href="http://kiddikn.github.io/atom.xml" rel="self"/>
+  <link href="http://kiddikn.github.io/"/>
+  <updated>2013-10-27T06:40:19+09:00</updated>
+  <id>http://kiddikn.github.io/</id>
+  <author>
+    <name><![CDATA[Kiddikn]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopressを始めました！]]></title>
+    <link href="http://kiddikn.github.io/blog/2013/10/26/start-octorpress/"/>
+    <updated>2013-10-26T15:11:00+09:00</updated>
+    <id>http://kiddikn.github.io/blog/2013/10/26/start-octorpress</id>
+    <content type="html"><![CDATA[<h2>初めてのoctopress</h2>
+
+<p>まだまだ初めたばかり。</p>
+]]></content>
+  </entry>
+  
+</feed>
