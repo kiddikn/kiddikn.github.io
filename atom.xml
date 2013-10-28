@@ -4,7 +4,7 @@
   <title><![CDATA[KIDDIKN Blog]]></title>
   <link href="http://kiddikn.github.io/atom.xml" rel="self"/>
   <link href="http://kiddikn.github.io/"/>
-  <updated>2013-10-28T23:41:45+09:00</updated>
+  <updated>2013-10-29T08:10:55+09:00</updated>
   <id>http://kiddikn.github.io/</id>
   <author>
     <name><![CDATA[Kiddikn]]></name>
@@ -22,10 +22,13 @@
 
 <p>まだまだ初めたばかり。
 なかなかgit deployが出来なくて苦労した。
-無理矢理pushさせるためにRake fileの一部をSystem &ldquo;git push origin +#{deploy_branch}&#8221;に変更
-Alter the line by adding a plus (+) before the #{deploy_branch} tag:</p>
+無理矢理pushさせるためにRake fileの一部を
+&lsquo;&rsquo;&lsquo;
+System &ldquo;git push origin +#{deploy_branch}&rdquo;
+&rsquo;&lsquo;&rsquo;
+に変更する。</p>
 
-<p>system &ldquo;git push origin +#{deploy_branch}&rdquo;</p>
+<p>Alter the line by adding a plus (+) before the #{deploy_branch}</p>
 
 <p>参考にしたページ:<a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress" title="stack over flow">Stack over flow</a></p>
 ]]></content>
