@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | KIDDIKN Blog]]></title>
   <link href="http://kiddikn.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://kiddikn.github.io/"/>
-  <updated>2013-10-29T08:10:55+09:00</updated>
+  <updated>2013-10-29T08:13:16+09:00</updated>
   <id>http://kiddikn.github.io/</id>
   <author>
     <name><![CDATA[Kiddikn]]></name>
@@ -22,11 +22,11 @@
 
 <p>まだまだ初めたばかり。
 なかなかgit deployが出来なくて苦労した。
-無理矢理pushさせるためにRake fileの一部を
-&lsquo;&rsquo;&lsquo;
-System &ldquo;git push origin +#{deploy_branch}&rdquo;
-&rsquo;&lsquo;&rsquo;
-に変更する。</p>
+無理矢理pushさせるためにRake fileの一部を</p>
+
+<p><code>System "git push origin +#{deploy_branch}"</code></p>
+
+<p>に変更する。</p>
 
 <p>Alter the line by adding a plus (+) before the #{deploy_branch}</p>
 
