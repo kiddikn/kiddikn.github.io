@@ -4,7 +4,7 @@
   <title><![CDATA[KIDDIKN Blog]]></title>
   <link href="http://kiddikn.github.io/atom.xml" rel="self"/>
   <link href="http://kiddikn.github.io/"/>
-  <updated>2013-10-30T08:23:19+09:00</updated>
+  <updated>2013-12-29T10:13:44+09:00</updated>
   <id>http://kiddikn.github.io/</id>
   <author>
     <name><![CDATA[Kiddikn]]></name>
@@ -12,6 +12,153 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[二回目の投稿]]></title>
+    <link href="http://kiddikn.github.io/blog/2013/12/28/secondpost/"/>
+    <updated>2013-12-28T22:19:00+09:00</updated>
+    <id>http://kiddikn.github.io/blog/2013/12/28/secondpost</id>
+    <content type="html"><![CDATA[<h1>記事の編集から投稿まで</h1>
+
+<hr />
+
+<p>前回初めて投稿してからテストやら部活やら就活やらで書いてなかったから再開することにした。<br/>
+そもそも書き方と投稿方法を忘れかけてるので復習しながらまとめる。</p>
+
+<h2>記事を書く</h2>
+
+<hr />
+
+<p>まずは次のコマンドを実行して記事の元ファイルを作成。filenameのところは英語で書いたほうが良い。なぜなら日本語はURLの一部となるためにアルファベットに変換されるから。不自然にならないように英語でかく。
+日本語でブログを運営するときはあとから変更すればいいようですね。</p>
+
+<pre><code>$ rake new_post["filename"]
+mkdir -p source/_posts
+Creating new post: source/_posts/2013-12-28-filename.markdown
+</code></pre>
+
+<p>実行結果の通りmarkdownファイルが作成される。そのファイルには予め次のようになっている。</p>
+
+<pre><code>---
+layout: post
+title: "filename"
+date: 2012-06-05 23:27
+comments: true
+categories: 
+---
+</code></pre>
+
+<p>categoriesのところは次のように記述するとよい。</p>
+
+<pre><code>&lt;例1&gt;
+categories: [javascript,css,jQuery,html]
+
+&lt;例2&gt;
+categories:
+- javascript
+- css
+- jQuery
+- html
+</code></pre>
+
+<p>その他のところはまたいつか。
+とりあえず記事を書くためにMarkdown記法の編集をみてみよう。</p>
+
+<h2>markdown記法の編集</h2>
+
+<hr />
+
+<h3>見出し</h3>
+
+<p>#の数で見出しのレベルが決まる。少ない方が良い。</p>
+
+<pre><code>[markdown]        [html]
+#text          =&gt; &lt;h1&gt;text&lt;/h1&gt;
+##text         =&gt; &lt;h2&gt;text&lt;/h2&gt;
+###text        =&gt; &lt;h3&gt;text&lt;/h3&gt;
+</code></pre>
+
+<h3>強調</h3>
+
+<p>文字を強調させるには、**(2つのアスタリスク)か__(2つのアンダースコア)で囲みます。なんて<strong>簡単</strong>なんだ！</p>
+
+<pre><code>[markdown]      [html]
+**text**     =&gt; &lt;strong&gt;text&lt;/strong&gt;
+__text__     =&gt; &lt;strong&gt;text&lt;/strong&gt;
+</code></pre>
+
+<h3>改行と段落</h3>
+
+<p>mdでは人がみる形で改行を入れていても、1行以上の空白が無いと表示上は改行されない…<br/>
+そういうときは改行する文末の末尾に半角スペースを2つ以上いれる。</p>
+
+<p>段落を変えるには1行あければいい
+以下のように打ち込むと</p>
+
+<pre><code>[markdown]
+あいうえお(半角スペース2つ) 
+かきくけこ(半角スペース2つ)
+さしすせそ
+たちつてと 
+
+なにぬねの
+</code></pre>
+
+<p>次のように表示される。</p>
+
+<pre><code>[html]
+&lt;p&gt;あいうえお&lt;br&gt;
+かきくけこ&lt;br&gt;
+さしすせそたちつてと&lt;/p&gt;
+&lt;p&gt;なにぬねの&lt;/p&gt;
+</code></pre>
+
+<h3>罫線</h3>
+
+<p>3つ以上の*か-か_と半角スペースのみの行は罫線として表示される。</p>
+
+<pre><code>[markdown]          [html]
+***           =&gt;    &lt;hr&gt;
+-------
+___
+</code></pre>
+
+<h3>リンク</h3>
+
+<p>これは例を見てやってみるのが良い</p>
+
+<pre><code> [markdown]                    
+  [どっかのページ](http://test) 
+=&gt;  
+ [html]
+  &lt;a href="http://test"&gt;どっかのページ&lt;/a&gt;
+</code></pre>
+
+<p>こんな感じで使えば良い。
+ちなみにこれは<a href="http://club.taiiku.tsukuba.ac.jp/life-saving/">私の所属ライフセービングチーム</a><br/>
+おぉすごい！！</p>
+
+<h2>Macで作成する便利ツール</h2>
+
+<p>Markdownをプレビューを見ながら編集するツールでおすすめのものを1つ紹介。</p>
+
+<p><a href="http://mouapp.com/">Mou</a><br/>
+ただここでのプレビューとupしたスタイルが異なっているかもしれないですが。それは今度勉強します</p>
+
+<h2>記事の投稿</h2>
+
+<hr />
+
+<p>記事さえ出来たら以下のコマンドでupする</p>
+
+<pre><code>$ rake generate
+$ rake deploy
+$ git add .
+$ git commit -m "blog更新"
+$ git push origin source
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[octopressを始めました！]]></title>
