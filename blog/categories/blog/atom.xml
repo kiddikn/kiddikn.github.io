@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | KIDDIKN Blog]]></title>
   <link href="http://kiddikn.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://kiddikn.github.io/"/>
-  <updated>2013-12-29T10:13:44+09:00</updated>
+  <updated>2013-12-29T10:20:03+09:00</updated>
   <id>http://kiddikn.github.io/</id>
   <author>
     <name><![CDATA[Kiddikn]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[二回目の投稿]]></title>
+    <title type="html"><![CDATA[mdの編集から記事としての投稿まで]]></title>
     <link href="http://kiddikn.github.io/blog/2013/12/28/secondpost/"/>
     <updated>2013-12-28T22:19:00+09:00</updated>
     <id>http://kiddikn.github.io/blog/2013/12/28/secondpost</id>
@@ -157,6 +157,13 @@ $ git add .
 $ git commit -m "blog更新"
 $ git push origin source
 </code></pre>
+
+<hr />
+
+<h4>参考サイト</h4>
+
+<p>+<a href="http://kbaba1001.github.io/blog/2012/06/05/githubtooctopressdeburoguwohazimerufang-fa/">凡人プログラマーの独り言</a>
++<a href="http://kojika17.com/2013/01/starting-markdown.html">KOJIKA17</a></p>
 ]]></content>
   </entry>
   
